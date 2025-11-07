@@ -1,4 +1,4 @@
-// 🌳 Clase Nodo: representa cada elemento del árbol
+// Clase Nodo: representa cada elemento del árbol
 class Nodo {
   constructor(valor) {
     this.valor = valor;      // Dato que guarda el nodo
@@ -7,13 +7,13 @@ class Nodo {
   }
 }
 
-// 🌿 Clase ArbolBinario: define las operaciones principales del árbol
+// Clase ArbolBinario: define las operaciones principales del árbol
 class ArbolBinario {
   constructor() {
     this.raiz = null;  // El árbol comienza vacío
   }
 
-  // 🌱 Insertar un nuevo valor en el árbol (de forma recursiva)
+  //Insertar un nuevo valor en el árbol (de forma recursiva)
   insertar(valor) {
     const nuevoNodo = new Nodo(valor);
     if (this.raiz === null) {
@@ -45,7 +45,7 @@ class ArbolBinario {
     }
   }
 
-  // 🌿 Recorrido preorden (raíz → izquierdo → derecho)
+  //Recorrido preorden (raíz → izquierdo → derecho)
   preOrden(nodo = this.raiz) {
     if (nodo !== null) {
       console.log(nodo.valor);
@@ -54,7 +54,7 @@ class ArbolBinario {
     }
   }
 
-  // 🍂 Recorrido postorden (izquierdo → derecho → raíz)
+  //Recorrido postorden (izquierdo → derecho → raíz)
   postOrden(nodo = this.raiz) {
     if (nodo !== null) {
       this.postOrden(nodo.izquierdo);
@@ -64,7 +64,7 @@ class ArbolBinario {
   }
 }
 
-// 🧩 Ejemplo de uso
+// Ejemplo de uso
 const arbol = new ArbolBinario();
 
 // Insertamos algunos valores
@@ -76,7 +76,7 @@ arbol.insertar(40);
 arbol.insertar(60);
 arbol.insertar(80);
 
-// 🔍 Mostramos recorridos
+// Mostramos recorridos
 console.log("Recorrido en orden (izq → raíz → der):");
 arbol.inOrden();
 
