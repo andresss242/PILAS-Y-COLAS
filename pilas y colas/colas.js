@@ -30,7 +30,7 @@ colaBanco.enqueue("Cliente 1 - Retiro");
 colaBanco.enqueue("Cliente 2 - Depósito");                  //se agregan los clientes con enqueue
 colaBanco.enqueue("Cliente 3 - Apertura de cuenta");
 
-console.log("🏦 Clientes esperando:");
+console.log("Clientes esperando:");
 colaBanco.printQueue();
 
 const atendido = colaBanco.dequeue();                      //el metodo dequeue atiende al primer cliente y es eliminado de la cola 
@@ -40,3 +40,4 @@ console.log("\n Estado actual de la cola:");
 colaBanco.printQueue();
 
 console.log(`\n Siguiente en ser atendido: ${colaBanco.front()}`);    //muestra quien es el siguiente en ser atendido
+
